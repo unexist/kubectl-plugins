@@ -1,0 +1,7 @@
+= Kubectl plugins
+
+This repository contains some utility kubectl plugins.
+
+== Links
+
+- https://kubernetes.io/docs/tasks/extend-kubectl/kubectl-plugins/
