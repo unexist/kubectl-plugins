@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
 IMAGE=${1:-praqma/network-multitool:latest}
+NAME=${2:-debug-shell}
 
-kubectl run -it --rm --tty --restart=Never --image=${IMAGE} debug-shell -- bash
+kubectl delete pod ${NAME}
+kubectl run -it --rm --tty --restart=Never --image=${IMAGE} ${NAME} -- bash
