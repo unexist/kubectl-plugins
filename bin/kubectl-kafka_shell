@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+IMAGE=${1:-confluentinc/cp-kafkacat:latest}
+
+kubectl run -it --rm --tty --restart=Never --image=${IMAGE} kafka-shell -- bash

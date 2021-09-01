@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+IMAGE=${1:-praqma/network-multitool:latest}
+
+kubectl run -it --rm --tty --restart=Never --image=${IMAGE} debug-shell -- bash
